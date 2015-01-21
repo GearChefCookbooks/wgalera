@@ -1,0 +1,2 @@
+# wgalera
+wrapper for galera
