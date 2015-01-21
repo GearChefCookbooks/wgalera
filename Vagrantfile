@@ -21,9 +21,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision :chef_solo do |chef|
+    chef.log_level = :debug
     chef.cookbooks_path = ["cookbooks"]
     chef.roles_path = ["roles"]
-    chef.add_recipe 'galera::default'
+    chef.add_role "galera_attr"
+    chef.add_recipe 'galera::server'
     
   end
 
