@@ -3,7 +3,7 @@ description "galera_cluster_attr"
 default_attributes(
    :shared => {
         :config => {
-            :nodes_file => "/opt/shared/galera.yml"
+            :nodes_file => "/opt/shared/configs/galera.yml"
             }
         },
    :mysql => {
