@@ -1,0 +1,15 @@
+{
+  "sources": {
+    "wgalera": {
+      "path": "."
+    },
+    "galera": {
+      "locked_version": "0.0.1",
+      "git": "git://github.com/GearChefCookbooks/galera.git",
+      "ref": "9360ddf8081e9ee7c5c114b4bc8d9fe532e14a1e"
+    },
+    "apt": {
+      "locked_version": "2.4.0"
+    }
+  }
+}

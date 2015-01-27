@@ -24,8 +24,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.log_level = :debug
     chef.cookbooks_path = ["cookbooks"]
     chef.roles_path = ["roles"]
-    chef.add_role "galera_attr"
-    chef.add_recipe 'galera::server'
+    #chef.add_role "galera_cluster_attr"
+    chef.add_recipe 'galera::install'
     
   end
 
